@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ============================================
+         BARRA DE NAVEGACIÓN
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="nav-logo">
+                <h2>Tienda Online</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="dashboard.html" class="nav-link">Inicio</a>
+                <a href="categories.html" class="nav-link">Categorías</a>
+                <a href="cart.html" class="nav-link activo">
+                    Carrito
+                    <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </div>
+            
+            <div class="nav-usuario">
+                <span>Hola, <strong id="nombre-usuario">Usuario</strong></span>
+                <button id="btn-cerrar-sesion" class="btn btn-secondary">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main class="contenedor">
+        
+        <h1>Mi Carrito de Compras</h1>
+        
+        <div class="carrito-contenedor">
+            
+            <!-- ============================================
+                 LISTA DE PRODUCTOS EN EL CARRITO
+                 ============================================ -->
+            <div class="carrito-items">
+                <div id="items-carrito">
+                    <!-- Los productos del carrito se cargarán aquí -->
+                </div>
+            </div>
+            
+            <!-- ============================================
+                 RESUMEN DEL CARRITO
+                 ============================================ -->
+            <div class="carrito-resumen">
+                <h2>Resumen del Pedido</h2>
+                
+                <div class="resumen-linea">
+                    <span>Subtotal:</span>
+                    <span id="subtotal-carrito">0.00 €</span>
+                </div>
+                
+                <div class="resumen-linea">
+                    <span>Envío:</span>
+                    <span>Gratis</span>
+                </div>
+                
+                <hr>
+                
+                <div class="resumen-total">
+                    <span><strong>Total:</strong></span>
+                    <span id="total-carrito"><strong>0.00 €</strong></span>
+                </div>
+                
+                <button id="btn-finalizar-compra" class="btn btn-primary btn-block">
+                    Finalizar Compra
+                </button>
+                
+                <button id="btn-vaciar-carrito" class="btn btn-secondary btn-block">
+                    Vaciar Carrito
+                </button>
+                
+                <a href="dashboard.html" class="btn btn-link btn-block">
+                    Continuar Comprando
+                </a>
+            </div>
+            
+        </div>
+        
+        <!-- ============================================
+             PRODUCTOS VISTOS RECIENTEMENTE (opcional)
+             ============================================ -->
+        <section class="seccion-vistos">
+            <h2>Productos Vistos Recientemente</h2>
+            <div id="productos-vistos" class="grid-productos">
+                <!-- Productos vistos se cargarán aquí -->
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

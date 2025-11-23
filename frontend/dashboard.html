@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ============================================
+         BARRA DE NAVEGACIÓN
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="nav-logo">
+                <h2>Tienda Online</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="dashboard.html" class="nav-link activo">Inicio</a>
+                <a href="categories.html" class="nav-link">Categorías</a>
+                <a href="cart.html" class="nav-link">
+                    Carrito
+                    <!-- Contador de productos en el carrito -->
+                    <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </div>
+            
+            <div class="nav-usuario">
+                <span>Hola, <strong id="nombre-usuario">Usuario</strong></span>
+                <button id="btn-cerrar-sesion" class="btn btn-secondary">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main class="contenedor">
+        
+        <!-- ============================================
+             SECCIÓN DE BIENVENIDA
+             ============================================ -->
+        <section class="seccion-bienvenida">
+            <h1>Bienvenido a la Tienda</h1>
+            <p>Descubre nuestros productos destacados y las mejores ofertas</p>
+        </section>
+        
+        <!-- ============================================
+             SECCIÓN DE CATEGORÍAS
+             ============================================ -->
+        <section class="seccion-categorias">
+            <h2>Categorías</h2>
+            <div id="lista-categorias" class="grid-categorias">
+                <!-- Las categorías se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+        
+        <!-- ============================================
+             SECCIÓN DE PRODUCTOS DESTACADOS
+             ============================================ -->
+        <section class="seccion-productos">
+            <h2>Productos Destacados</h2>
+            <div id="productos-destacados" class="grid-productos">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- ============================================
+         PIE DE PÁGINA
+         ============================================ -->
+    <footer class="footer">
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script src="js/utils.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

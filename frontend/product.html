@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ============================================
+         BARRA DE NAVEGACIÓN
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="nav-logo">
+                <h2>Tienda Online</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="dashboard.html" class="nav-link">Inicio</a>
+                <a href="categories.html" class="nav-link">Categorías</a>
+                <a href="cart.html" class="nav-link">
+                    Carrito
+                    <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </div>
+            
+            <div class="nav-usuario">
+                <span>Hola, <strong id="nombre-usuario">Usuario</strong></span>
+                <button id="btn-cerrar-sesion" class="btn btn-secondary">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main class="contenedor">
+        
+        <!-- ============================================
+             BOTÓN DE VOLVER
+             ============================================ -->
+        <div class="breadcrumb">
+            <a href="dashboard.html">Inicio</a> > 
+            <a href="categories.html">Categorías</a> > 
+            <span id="breadcrumb-producto">Producto</span>
+        </div>
+        
+        <!-- ============================================
+             DETALLE DEL PRODUCTO
+             ============================================ -->
+        <div id="detalle-producto" class="detalle-producto">
+            <!-- El contenido se cargará dinámicamente -->
+            <div class="cargando">Cargando producto...</div>
+        </div>
+        
+        <!-- ============================================
+             PRODUCTOS RELACIONADOS (opcional)
+             ============================================ -->
+        <section class="seccion-relacionados">
+            <h2>Productos Relacionados</h2>
+            <div id="productos-relacionados" class="grid-productos">
+                <!-- Productos relacionados se cargarán aquí -->
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script src="js/utils.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

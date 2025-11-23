@@ -1,0 +1,66 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Electrónica",
+      "descripcion": "Dispositivos electrónicos"
+    },
+    {
+      "id": 2,
+      "nombre": "Ropa",
+      "descripcion": "Prendas de vestir"
+    },
+    {
+      "id": 3,
+      "nombre": "Hogar",
+      "descripcion": "Artículos para el hogar"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Portátil HP",
+      "precio": 899.99,
+      "descripcion": "Portátil potente para trabajo y gaming",
+      "imagen": "laptop.jpg",
+      "id_categoria": 1,
+      "destacado": true
+    },
+    {
+      "id": 2,
+      "nombre": "Smartphone Samsung",
+      "precio": 699.99,
+      "descripcion": "Smartphone de última generación",
+      "imagen": "phone.jpg",
+      "id_categoria": 1,
+      "destacado": true
+    },
+    {
+      "id": 3,
+      "nombre": "Camiseta Nike",
+      "precio": 29.99,
+      "descripcion": "Camiseta deportiva de algodón",
+      "imagen": "shirt.jpg",
+      "id_categoria": 2,
+      "destacado": false
+    },
+    {
+      "id": 4,
+      "nombre": "Pantalón Levi's",
+      "precio": 79.99,
+      "descripcion": "Pantalón vaquero clásico",
+      "imagen": "jeans.jpg",
+      "id_categoria": 2,
+      "destacado": false
+    },
+    {
+      "id": 5,
+      "nombre": "Lámpara LED",
+      "precio": 45.50,
+      "descripcion": "Lámpara de escritorio regulable",
+      "imagen": "lamp.jpg",
+      "id_categoria": 3,
+      "destacado": true
+    }
+  ]
+}

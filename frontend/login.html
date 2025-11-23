@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <!-- ============================================
+             ENCABEZADO
+             ============================================ -->
+        <div class="header-login">
+            <h1>Tienda Online</h1>
+            <p>Inicia sesión para continuar</p>
+        </div>
+        
+        <!-- ============================================
+             FORMULARIO DE LOGIN
+             ============================================ -->
+        <form id="form-login" class="formulario-login">
+            <div class="grupo-input">
+                <label for="usuario">Usuario</label>
+                <input 
+                    type="text" 
+                    id="usuario" 
+                    name="usuario" 
+                    placeholder="Ingresa tu usuario"
+                    required
+                    autocomplete="username">
+            </div>
+            
+            <div class="grupo-input">
+                <label for="password">Contraseña</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Ingresa tu contraseña"
+                    required
+                    autocomplete="current-password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+                Iniciar Sesión
+            </button>
+        </form>
+        
+        <!-- ============================================
+             MENSAJE DE ESTADO (error/éxito/cargando)
+             ============================================ -->
+        <div id="mensaje" class="mensaje" style="display: none;"></div>
+        
+        <!-- ============================================
+             INFORMACIÓN DE PRUEBA (opcional, para desarrollo)
+             ============================================ -->
+        <div class="info-prueba">
+            <p><strong>Usuarios de prueba:</strong></p>
+            <p>Usuario: admin | Contraseña: admin123</p>
+            <p>Usuario: juan | Contraseña: juan123</p>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <!-- IMPORTANTE: utils.js debe cargarse primero -->
+    <script src="js/utils.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

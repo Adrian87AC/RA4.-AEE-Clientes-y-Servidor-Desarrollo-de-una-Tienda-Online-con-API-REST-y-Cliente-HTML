@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ============================================
+         BARRA DE NAVEGACIÓN (igual que dashboard)
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="nav-logo">
+                <h2>Tienda Online</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="dashboard.html" class="nav-link">Inicio</a>
+                <a href="categories.html" class="nav-link activo">Categorías</a>
+                <a href="cart.html" class="nav-link">
+                    Carrito
+                    <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </div>
+            
+            <div class="nav-usuario">
+                <span>Hola, <strong id="nombre-usuario">Usuario</strong></span>
+                <button id="btn-cerrar-sesion" class="btn btn-secondary">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main class="contenedor">
+        
+        <h1>Explorar por Categorías</h1>
+        
+        <!-- ============================================
+             LISTADO DE CATEGORÍAS
+             ============================================ -->
+        <section class="seccion-categorias">
+            <div id="lista-categorias" class="grid-categorias-grande">
+                <!-- Las categorías se cargarán aquí -->
+            </div>
+        </section>
+        
+        <!-- ============================================
+             PRODUCTOS DE LA CATEGORÍA SELECCIONADA
+             (se muestra solo si hay una categoría seleccionada)
+             ============================================ -->
+        <section id="seccion-productos-categoria" class="seccion-productos" style="display: none;">
+            <h2 id="nombre-categoria">Productos</h2>
+            <div id="productos-categoria" class="grid-productos">
+                <!-- Los productos de la categoría se cargarán aquí -->
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script src="js/utils.js"></script>
+    <script src="js/categories.js"></script>
+</body>
+</html>
